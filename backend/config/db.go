@@ -46,6 +46,7 @@ func SetupDatabase() {
 		Password:  hashedPassword,
 		BirthDay:  BirthDay,
 		GenderID:  1,
+		Telnumber: "0934719687",
 	}
 	db.FirstOrCreate(User, &entity.Users{
 		Email: "sa@gmail.com",

@@ -16,5 +16,5 @@ type Users struct {
 	BirthDay  time.Time `json:"birthday"`
 	GenderID  uint      `json:"gender_id"`
 	Gender    *Genders  `gorm:"foreignKey: gender_id" json:"gender"`
-	Telnumber uint8     `json:"telnumber"`
+	Telnumber string    `json:"telnumber"`
 }
